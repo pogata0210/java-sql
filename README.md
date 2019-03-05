@@ -307,6 +307,18 @@ SupplierID	SupplierName	ContactName	Address	City	PostalCode	Country	Phone
 18	Aux joyeux ecclésiastiques	Guylène Nodier	203, Rue des Francs-Bourgeois	Paris	75004	France	(1) 03.83.00.68
 19	New England Seafood Cannery	Robb Merchant	Order Processing Dept. 2100 Paul Revere Blvd.	Boston	02134	USA	(617) 555-3267
 
+6. SELECT * FROM customers WHERE customername LIKE '%market%'
+
+CustomerID	CustomerName	ContactName	Address	City	PostalCode	Country
+10	Bottom-Dollar Marketse	Elizabeth Lincoln	23 Tsawassen Blvd.	Tsawassen	T2F 8M4	Canada
+32	Great Lakes Food Market	Howard Snyder	2732 Baker Blvd.	Eugene	97403	USA
+71	Save-a-lot Markets	Jose Pavarotti	187 Suffolk Ln.	Boise	83720	USA
+89	White Clover Markets	Karl Jablonski	305 - 14th Ave. S. Suite 3B	Seattle	98128	USA
+
+7. INSERT INTO customers(customerid, customername, contactname, address, city, postalcode, country) VALUES (null, 'The Shire', 'Bilbo Baggins', '1 Hobbit-Hole', 'Bag End', 111, 'Middle Earth')
+
+8. UPDATE customers SET postalcode = 11122 WHERE contactname = 'Bilbo Baggins'
+
 
 
 
