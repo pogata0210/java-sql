@@ -319,6 +319,14 @@ CustomerID	CustomerName	ContactName	Address	City	PostalCode	Country
 
 8. UPDATE customers SET postalcode = 11122 WHERE contactname = 'Bilbo Baggins'
 
+9. SELECT customername, count(*) as 'Number of Orders' FROM orders LEFT JOIN customers ON orders.customerid = customers.customerid GROUP BY orders.customerid
+
+9. SELECT customername, count(*) as Num_Of_Orders FROM orders LEFT JOIN customers ON orders.customerid = customers.customerid GROUP BY orders.customerid ORDER BY Num_Of_Orders DESC
+
+10.SELECT city, count(*) as Num_Of_Orders FROM orders LEFT JOIN customers ON orders.customerid = customers.customerid GROUP BY customers.city ORDER BY city
+
+11. DELETE FROM Customers WHERE CustomerID NOT IN (SELECT CustomerID FROM Orders)
+
 
 
 
